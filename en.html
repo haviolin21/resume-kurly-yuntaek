@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yuntaek Ha | Commerce Strategy Resume</title>
+  <meta
+    name="description"
+    content="Yuntaek Ha - Data-driven commerce strategy professional with experience in payment growth, category strategy, platform growth, and operational optimization."
+  />
+  <style>
+    :root {
+      --bg: #f8f7fb;
+      --surface: #ffffff;
+      --surface-2: #f3f0f8;
+      --text: #1e1b24;
+      --muted: #6f667b;
+      --line: #e7e0ef;
+      --primary: #5f0080;
+      --primary-2: #7a1fa2;
+      --shadow: 0 10px 30px rgba(58, 19, 87, 0.08);
+      --radius-xl: 24px;
+      --radius-lg: 18px;
+      --radius-md: 14px;
+      --max-width: 1120px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: linear-gradient(180deg, #faf8fc 0%, #f7f5fb 100%);
+      color: var(--text);
+      line-height: 1.65;
+      letter-spacing: -0.01em;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(100% - 40px, var(--max-width));
+      margin: 0 auto;
+    }
+
+    .section { padding: 100px 0; }
+    .section-sm { padding: 72px 0; }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(95, 0, 128, 0.08);
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--primary);
+      display: inline-block;
+    }
+
+    .section-title {
+      margin: 16px 0 12px;
+      font-size: clamp(30px, 4vw, 46px);
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+    }
+
+    .section-desc {
+      max-width: 760px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(14px);
+      background: rgba(248, 247, 251, 0.82);
+      border-bottom: 1px solid rgba(231, 224, 239, 0.7);
+    }
+
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 72px;
+      gap: 16px;
+    }
+
+    .topbar-right{
+      display:flex;
+      align-items:center;
+      gap:24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    .brand-mark {
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--primary), #8432b5);
+      color: white;
+      display: grid;
+      place-items: center;
+      box-shadow: var(--shadow);
+      font-size: 15px;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .nav a:hover {
+      color: var(--primary);
+    }
+
+    .lang-switch{
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
+
+    .lang-btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-width:44px;
+      height:36px;
+      padding:0 12px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:#fff;
+      color:var(--muted);
+      font-size:13px;
+      font-weight:700;
+      transition:all 0.2s ease;
+    }
+
+    .lang-btn:hover{
+      color:var(--primary);
+      border-color:#d9c8ea;
+    }
+
+    .lang-btn.active{
+      background:var(--primary);
+      color:#fff;
+      border-color:var(--primary);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 48px;
+      padding: 0 18px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-weight: 700;
+      font-size: 15px;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+      cursor: pointer;
+    }
+
+    .btn:hover { transform: translateY(-1px); }
+
+    .btn.primary {
+      background: var(--primary);
+      color: white;
+      box-shadow: 0 10px 24px rgba(95, 0, 128, 0.22);
+    }
+
+    .btn.secondary {
+      background: white;
+      color: var(--primary);
+      border-color: rgba(95, 0, 128, 0.15);
+    }
+
+    .hero { padding: 72px 0 44px; }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .hero-card,
+    .panel,
+    .metric-card,
+    .timeline-item,
+    .project-card,
+    .skill-card,
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-card {
+      padding: 34px;
+      background:
+        radial-gradient(circle at top right, rgba(95, 0, 128, 0.08), transparent 28%),
+        linear-gradient(180deg, #ffffff 0%, #fcfbfe 100%);
+      transition: all 0.3s ease;
+      animation: floatHero 6s ease-in-out infinite;
+    }
+
+    .hero-card:hover{
+      transform: translateY(-6px);
+      box-shadow: 0 25px 50px rgba(58, 19, 87, 0.12);
+    }
+
+    @keyframes floatHero {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+      100% { transform: translateY(0px); }
+    }
+
+    .hero-title {
+      margin: 18px 0 16px;
+      font-size: clamp(36px, 5vw, 62px);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+    }
+
+    .hero-title .accent { color: var(--primary); }
+
+    .hero-desc {
+      margin: 0;
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .hero-highlight{
+      margin-top:20px;
+      font-size:18px;
+      font-weight:700;
+      color:var(--primary);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .hero-side {
+      display: grid;
+      gap: 16px;
+    }
+
+    .panel { padding: 22px; }
+
+    .panel h3 {
+      margin: 0 0 12px;
+      font-size: 17px;
+    }
+
+    .info-list,
+    .mini-list {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .info-list li,
+    .mini-list li {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .info-list strong,
+    .mini-list strong {
+      color: var(--text);
+    }
+
+    .metrics {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .metric-card {
+      padding: 20px;
+      border-radius: var(--radius-lg);
+      background: linear-gradient(180deg, #ffffff 0%, #faf8fd 100%);
+    }
+
+    .metric-value {
+      font-size: clamp(24px, 3vw, 34px);
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1.1;
+    }
+
+    .metric-label {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 24px;
+      margin-top: 28px;
+    }
+
+    .skill-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .skill-card {
+      padding: 22px;
+      border-radius: var(--radius-lg);
+    }
+
+    .skill-card h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+
+    .skill-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .timeline { display: grid; gap: 18px; margin-top: 28px; }
+
+    .timeline-item {
+      padding: 24px;
+      border-radius: var(--radius-lg);
+    }
+
+    .timeline-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+
+    .timeline-title {
+      margin: 0;
+      font-size: 20px;
+      line-height: 1.25;
+    }
+
+    .timeline-role {
+      margin: 6px 0 0;
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .timeline-date {
+      white-space: nowrap;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+      background: var(--surface-2);
+      border-radius: 999px;
+      padding: 8px 12px;
+    }
+
+    .timeline-list {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .timeline-list li + li { margin-top: 6px; }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+      margin-top: 30px;
+    }
+
+    .project-card {
+      padding: 24px;
+      border-radius: var(--radius-lg);
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at top right, rgba(95, 0, 128, 0.05), transparent 30%),
+        #ffffff;
+      opacity:0;
+      transform:translateY(30px);
+      transition:all 0.6s ease;
+    }
+
+    .project-card.show{
+      opacity:1;
+      transform:translateY(0);
+    }
+
+    .project-card:hover{
+      transform: translateY(-10px);
+      box-shadow: 0 30px 60px rgba(58, 19, 87, 0.12);
+      border-color:#e4d8f3;
+    }
+
+    .project-tag {
+      display: inline-flex;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(95, 0, 128, 0.08);
+      color: var(--primary);
+      font-size: 12px;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    .result-badge{
+      display:inline-block;
+      background: var(--primary);
+      color:#fff;
+      padding: 6px 12px;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 12px;
+      box-shadow: 0 8px 20px rgba(95,0,128,0.16);
+    }
+
+    .project-card h3 {
+      margin: 0 0 12px;
+      font-size: 22px;
+      line-height: 1.3;
+    }
+
+    .project-summary {
+      margin: 0 0 16px;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .project-meta {
+      display: grid;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .project-meta div {
+      padding: 12px 14px;
+      border-radius: 14px;
+      background: var(--surface-2);
+      font-size: 14px;
+      color: var(--text);
+    }
+
+    .project-meta strong { color: var(--primary); }
+
+    .contact-card {
+      padding: 28px;
+      margin-top: 28px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .contact-card h3 {
+      margin: 0 0 8px;
+      font-size: 24px;
+    }
+
+    .contact-card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    footer {
+      padding: 36px 0 56px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .footer-links{
+      margin-top:15px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .footer-links a{
+      text-decoration: underline;
+      opacity: 0.8;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .reveal.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .two-col,
+      .project-grid,
+      .skill-grid,
+      .contact-card {
+        grid-template-columns: 1fr;
+      }
+
+      .metrics {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .contact-card {
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .topbar-inner {
+        min-height: 64px;
+      }
+
+      .nav { display: none; }
+
+      .hero { padding-top: 36px; }
+
+      .hero-card,
+      .panel,
+      .timeline-item,
+      .project-card,
+      .skill-card,
+      .contact-card {
+        padding: 20px;
+        border-radius: 18px;
+      }
+
+      .metrics {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .hero-actions,
+      .contact-links {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .btn { width: 100%; }
+
+      .timeline-top {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .timeline-date {
+        white-space: normal;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .container {
+        width: min(100% - 28px, var(--max-width));
+      }
+
+      .section,
+      .section-sm {
+        padding: 56px 0;
+      }
+
+      .metrics {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-title {
+        font-size: 38px;
+      }
+
+      .section-title {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark">HY</span>
+        <span>Yuntaek Ha</span>
+      </a>
+
+      <div class="topbar-right">
+        <nav class="nav" aria-label="Main menu">
+          <a href="#summary">Summary</a>
+          <a href="#skills">Skills</a>
+          <a href="#career">Career</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="lang-switch">
+          <a class="lang-btn" href="index.html">KR</a>
+          <a class="lang-btn active" href="en.html">EN</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-card reveal show">
+            <span class="eyebrow">English Version</span>
+            <h1 class="hero-title">
+              Data-driven<br />
+              <span class="accent">Commerce Strategy</span><br />
+              Professional
+            </h1>
+
+            <p class="hero-desc">
+              A data-driven commerce strategy professional with hands-on experience in payment growth,
+              platform growth, category strategy, and operational optimization.
+            </p>
+
+            <p class="hero-highlight">
+              2.4x payment growth · 1.6x user growth · KRW 200M annual cost savings
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn primary" href="resume.pdf" download="Yuntaek_Ha_Resume.pdf">Download PDF</a>
+              <a class="btn secondary" href="#projects">View Projects</a>
+            </div>
+
+            <div class="metrics">
+              <div class="metric-card reveal">
+                <div class="metric-value">2.4x</div>
+                <div class="metric-label">Payment Growth</div>
+              </div>
+              <div class="metric-card reveal">
+                <div class="metric-value">1.6x</div>
+                <div class="metric-label">User Growth</div>
+              </div>
+              <div class="metric-card reveal">
+                <div class="metric-value">2x</div>
+                <div class="metric-label">Listing Growth</div>
+              </div>
+              <div class="metric-card reveal">
+                <div class="metric-value">₩200M</div>
+                <div class="metric-label">Annual Cost Savings</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-side">
+            <div class="panel reveal show">
+              <h3>Basic Information</h3>
+              <ul class="info-list">
+                <li><strong>Name</strong> Yuntaek Ha</li>
+                <li><strong>Email</strong> yuntaek.ha@gmail.com</li>
+                <li><strong>Phone</strong> 010-4795-3330</li>
+                <li><strong>Position</strong> Data-driven Commerce Strategy Planner</li>
+              </ul>
+            </div>
+
+            <div class="panel reveal show">
+              <h3>Keywords</h3>
+              <ul class="mini-list">
+                <li><strong>Commerce Strategy</strong> category growth / payment conversion / promotion optimization</li>
+                <li><strong>Data Analysis</strong> SQL / funnel / LTV / cohort</li>
+                <li><strong>Visualization</strong> QuickSight / Looker Studio / Superset</li>
+                <li><strong>Collaboration</strong> engineering / operations / planning / marketing</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="summary" class="section">
+      <div class="container">
+        <span class="eyebrow">Summary</span>
+        <h2 class="section-title reveal">Turning data into measurable commerce outcomes</h2>
+        <p class="section-desc reveal">
+          At Joonggonara, I drove 2.4x payment growth through funnel analysis and high-value user segmentation.
+          I also led a cafe-to-app growth initiative that increased users by 1.6x and listings by 2x.
+          At KimCaddie, I introduced IVR-based booking automation and reduced annual operating costs by approximately KRW 200M.
+        </p>
+
+        <div class="two-col">
+          <div class="panel reveal">
+            <h3>How I solve problems</h3>
+            <ul class="mini-list">
+              <li><strong>1.</strong> Define the problem through KPI and customer behavior analysis</li>
+              <li><strong>2.</strong> Identify bottlenecks using SQL and visualization tools</li>
+              <li><strong>3.</strong> Build hypotheses and design experiments</li>
+              <li><strong>4.</strong> Execute product, policy, or process improvements</li>
+              <li><strong>5.</strong> Validate results and iterate</li>
+            </ul>
+          </div>
+
+          <div class="panel reveal">
+            <h3>Core strengths</h3>
+            <ul class="mini-list">
+              <li><strong>Commerce domain understanding</strong> Wemakeprice, Coupang, Joonggonara, KimCaddie</li>
+              <li><strong>Execution-oriented strategy</strong> from analysis to implementation</li>
+              <li><strong>Cross-functional collaboration</strong> from requirement definition to rollout</li>
+              <li><strong>Measured results</strong> GMV, users, listings, and cost savings</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <span class="eyebrow">Core Skills</span>
+        <h2 class="section-title reveal">What I bring</h2>
+        <p class="section-desc reveal">
+          I have worked across commerce growth, payment conversion, category strategy, and operational improvement,
+          always grounded in data and execution.
+        </p>
+
+        <div class="skill-grid">
+          <article class="skill-card reveal">
+            <h3>Business Analysis</h3>
+            <p>SQL-based data extraction, KPI design, funnel analysis, LTV analysis, cohort analysis</p>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3>Visualization & Reporting</h3>
+            <p>QuickSight, Looker Studio, and Superset for dashboard building and monitoring</p>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3>Commerce Strategy</h3>
+            <p>Category growth, payment conversion, promotion optimization, high-value user strategy</p>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3>Growth Projects</h3>
+            <p>User acquisition, listing activation, incentive design, and growth experiment execution</p>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3>Operational Optimization</h3>
+            <p>Process redesign, automation, cost reduction, and quality/efficiency improvement</p>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3>Cross-functional Work</h3>
+            <p>Collaborating with engineering, operations, planning, and marketing teams</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="career" class="section">
+      <div class="container">
+        <span class="eyebrow">Career</span>
+        <h2 class="section-title reveal">Experience</h2>
+        <p class="section-desc reveal">
+          My background spans major commerce and platform businesses, connecting customer behavior, product structure, and business performance.
+        </p>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-top">
+              <div>
+                <h3 class="timeline-title">KimCaddie</h3>
+                <p class="timeline-role">Operations Team Lead</p>
+              </div>
+              <span class="timeline-date">Jun 2025 – Feb 2026</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Defined service improvement initiatives based on operational data and VOC</li>
+              <li>Planned and implemented IVR-based reservation automation</li>
+              <li>Reduced annual operating cost by approximately KRW 200M</li>
+              <li>Improved call CS response rate from 10% to 80%</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-top">
+              <div>
+                <h3 class="timeline-title">Joonggonara</h3>
+                <p class="timeline-role">Manager, Payment Partnership Team</p>
+              </div>
+              <span class="timeline-date">Mar 2022 – Apr 2024</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Performed SQL-based analysis and KPI reporting</li>
+              <li>Improved payment conversion through funnel analysis</li>
+              <li>Drove 2.4x payment growth and achieved highest annual payment volume in 2023</li>
+              <li>Increased NRU by 1.6x and listings by 2x through cafe-to-app growth project</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-top">
+              <div>
+                <h3 class="timeline-title">Brands Company (formerly Skylab)</h3>
+                <p class="timeline-role">Team Lead, Marketing Planning</p>
+              </div>
+              <span class="timeline-date">May 2021 – Jan 2022</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Led Coupang Rocket Delivery channel operations</li>
+              <li>Improved inventory planning through sales data analysis</li>
+              <li>Achieved average monthly sales growth of over 10%</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-top">
+              <div>
+                <h3 class="timeline-title">Coupang</h3>
+                <p class="timeline-role">L4, Pricing Operation</p>
+              </div>
+              <span class="timeline-date">Apr 2020 – Aug 2020</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Managed pricing policies and operational issues across categories</li>
+              <li>Built pricing logic for mask-related market volatility</li>
+              <li>Improved workflow efficiency through SQL-based analysis</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-top">
+              <div>
+                <h3 class="timeline-title">Wemakeprice</h3>
+                <p class="timeline-role">Promotion Operation</p>
+              </div>
+              <span class="timeline-date">Dec 2017 – Mar 2020</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Operated food category price-comparison promotions</li>
+              <li>Built TOP SKU-based promotion strategy</li>
+              <li>Achieved No.1 performance in category and hit GMV/CM targets</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <span class="eyebrow">Key Projects</span>
+        <h2 class="section-title reveal">Selected Projects</h2>
+        <p class="section-desc reveal">
+          A selection of projects demonstrating measurable outcomes across payment growth, user growth, operational automation, and category strategy.
+        </p>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <span class="project-tag">Payment Growth</span>
+            <div class="result-badge">2.4x Growth</div>
+            <h3>2.4x Payment Growth at Joonggonara Pay</h3>
+            <p class="project-summary">
+              Identified high churn in the chat stage through SQL-based funnel analysis.
+              Combined product improvements, high-value user segmentation, and event strategy to drive payment growth.
+            </p>
+            <div class="project-meta">
+              <div><strong>Problem</strong> Low payment volume and major drop-off in the conversion funnel</div>
+              <div><strong>Analysis</strong> SQL-based funnel analysis and user segmentation</div>
+              <div><strong>Result</strong> 2.4x payment growth and highest annual payment volume in 2023</div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <span class="project-tag">User Growth</span>
+            <div class="result-badge">1.6x Users</div>
+            <h3>Cafe-to-App Growth Initiative</h3>
+            <p class="project-summary">
+              Designed a strategy to convert Naver Cafe traffic into app growth through account linkage and staged incentive campaigns.
+              Increased user growth and listing activity through automation and LTV-based reward design.
+            </p>
+            <div class="project-meta">
+              <div><strong>Problem</strong> Need to improve app growth and activation</div>
+              <div><strong>Analysis</strong> LTV analysis, user activity analysis, campaign performance validation</div>
+              <div><strong>Result</strong> 1.6x user growth and 2x listing growth</div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <span class="project-tag">Ops Automation</span>
+            <div class="result-badge">₩200M Savings</div>
+            <h3>IVR-based Reservation Automation</h3>
+            <p class="project-summary">
+              Replaced a phone-based manual reservation process with IVR automation to reduce missed bookings and operational risk.
+              Verified business impact through SQL-based booking/payment analysis and pilot testing.
+            </p>
+            <div class="project-meta">
+              <div><strong>Problem</strong> Missed reservations during off-hours and high labor cost</div>
+              <div><strong>Analysis</strong> SQL-based reservation/payment analysis and pilot validation</div>
+              <div><strong>Result</strong> Reservation success rate improved from 50% to 70%, annual savings of about KRW 200M</div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <span class="project-tag">Category Strategy</span>
+            <div class="result-badge">No.1 Category</div>
+            <h3>TOP SKU Promotion Optimization at Wemakeprice</h3>
+            <p class="project-summary">
+              Built a TOP SKU-focused promotion strategy for the food category using Excel and transaction analysis.
+              Concentrated investment on high-impact SKUs to improve both sales and promotion efficiency.
+            </p>
+            <div class="project-meta">
+              <div><strong>Problem</strong> Low GMV return from broad promotion spending</div>
+              <div><strong>Analysis</strong> Pareto-based SKU structure analysis</div>
+              <div><strong>Result</strong> Achieved No.1 category performance and GMV/CM targets</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-sm">
+      <div class="container">
+        <span class="eyebrow">Contact</span>
+        <h2 class="section-title reveal">Get in touch</h2>
+        <p class="section-desc reveal">
+          I am open to opportunities in commerce strategy, growth, and business planning roles.
+        </p>
+
+        <div class="contact-card reveal">
+          <div>
+            <h3>Yuntaek Ha</h3>
+            <p>Data-driven Commerce Strategy Planner</p>
+          </div>
+          <div class="contact-links">
+            <a class="btn primary" href="resume.pdf" download="Yuntaek_Ha_Resume.pdf">Download PDF</a>
+            <a class="btn secondary" href="mailto:yuntaek.ha@gmail.com">Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Yuntaek Ha. Built for Kurly Commerce Strategy Application.</p>
+      <div class="footer-links">
+        <a href="mailto:yuntaek.ha@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/yuntaek-h-510828171/" target="_blank">LinkedIn</a>
+        <a href="index.html">Korean Version</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    document.querySelectorAll(".reveal").forEach((el) => {
+      revealObserver.observe(el);
+    });
+
+    const cards = document.querySelectorAll(".project-card");
+
+    cards.forEach((card, i) => {
+      const cardObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setTimeout(() => {
+              card.classList.add("show");
+            }, i * 150);
+          }
+        });
+      });
+
+      cardObserver.observe(card);
+    });
+  </script>
+</body>
+</html>
