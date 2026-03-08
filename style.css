@@ -384,6 +384,13 @@ img {
   margin-top: 30px;
 }
 
+.hero-highlight {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
 .project-card {
   padding: 24px;
   border-radius: var(--radius-lg);
@@ -392,6 +399,25 @@ img {
   background:
     radial-gradient(circle at top right, rgba(95, 0, 128, 0.05), transparent 30%),
     #ffffff;
+  transition: all 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px rgba(58, 19, 87, 0.12);
+  border-color: #e4d8f3;
+}
+
+.result-badge {
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 12px rgba(95, 0, 128, 0.15);
 }
 
 .project-tag {
