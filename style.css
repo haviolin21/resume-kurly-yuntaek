@@ -867,6 +867,62 @@ img {
   }
 }
 
+/* Education */
+.edu-list {
+  display: grid;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.edu-item {
+  padding: 24px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  transition: all 0.3s ease;
+}
+
+.edu-item:hover {
+  border-color: var(--primary);
+  transform: translateX(6px);
+}
+
+.edu-type {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;
+  height: 32px;
+  background: var(--surface-2);
+  color: var(--primary);
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.edu-info h4 {
+  margin: 0 0 4px;
+  font-size: 18px;
+}
+
+.edu-info p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .edu-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
 footer {
   padding: 36px 0 56px;
   color: var(--muted);
