@@ -302,63 +302,51 @@
         </p>
 
         <div class="project-grid">
-          <article class="project-card">
+          <article class="project-card" data-project="ivr">
+            <span class="project-tag">Ops Automation</span>
+            <div class="result-badge">2.4x Growth</div>
+            <h3>IVR-based Reservation Automation</h3>
+            <p class="project-summary">
+              Replaced a phone-based manual reservation process with IVR automation to reduce missed bookings and operational risk.
+            </p>
+            <div class="project-footer">
+              <span class="view-more">View Details <i data-lucide="arrow-right"></i></span>
+            </div>
+          </article>
+
+          <article class="project-card" data-project="pay">
             <span class="project-tag">Payment Growth</span>
             <div class="result-badge">2.4x Growth</div>
             <h3>2.4x Payment Growth at Joonggonara Pay</h3>
             <p class="project-summary">
-              Identified high churn in the chat stage through SQL-based funnel analysis.
-              Combined product improvements, high-value user segmentation, and event strategy to drive payment growth.
+              Identified high churn in the chat stage through SQL-based funnel analysis and implemented automation to drive growth.
             </p>
-            <div class="project-meta">
-              <div><strong>Problem</strong> Low payment volume and major drop-off in the conversion funnel</div>
-              <div><strong>Analysis</strong> SQL-based funnel analysis and user segmentation</div>
-              <div><strong>Result</strong> 2.4x payment growth and highest annual payment volume in 2023</div>
+            <div class="project-footer">
+              <span class="view-more">View Details <i data-lucide="arrow-right"></i></span>
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-project="growth">
             <span class="project-tag">User Growth</span>
             <div class="result-badge">1.6x Users</div>
             <h3>Cafe-to-App Growth Initiative</h3>
             <p class="project-summary">
-              Designed a strategy to convert Naver Cafe traffic into app growth through account linkage and staged incentive campaigns.
-              Increased user growth and listing activity through automation and LTV-based reward design.
+              Designed a strategy to convert Naver Cafe traffic into app growth through account linkage and staged campaign design.
             </p>
-            <div class="project-meta">
-              <div><strong>Problem</strong> Need to improve app growth and activation</div>
-              <div><strong>Analysis</strong> LTV analysis, user activity analysis, campaign performance validation</div>
-              <div><strong>Result</strong> 1.6x user growth and 2x listing growth</div>
+            <div class="project-footer">
+              <span class="view-more">View Details <i data-lucide="arrow-right"></i></span>
             </div>
           </article>
 
-          <article class="project-card">
-            <span class="project-tag">Ops Automation</span>
-            <div class="result-badge">₩200M Savings</div>
-            <h3>IVR-based Reservation Automation</h3>
-            <p class="project-summary">
-              Replaced a phone-based manual reservation process with IVR automation to reduce missed bookings and operational risk.
-              Verified business impact through SQL-based booking/payment analysis and pilot testing.
-            </p>
-            <div class="project-meta">
-              <div><strong>Problem</strong> Missed reservations during off-hours and high labor cost</div>
-              <div><strong>Analysis</strong> SQL-based reservation/payment analysis and pilot validation</div>
-              <div><strong>Result</strong> Reservation success rate improved from 50% to 70%, annual savings of about KRW 200M</div>
-            </div>
-          </article>
-
-          <article class="project-card">
+          <article class="project-card" data-project="promo">
             <span class="project-tag">Category Strategy</span>
             <div class="result-badge">No.1 Category</div>
-            <h3>TOP SKU Promotion Optimization at Wemakeprice</h3>
+            <h3>TOP SKU Promotion Optimization</h3>
             <p class="project-summary">
-              Built a TOP SKU-focused promotion strategy for the food category using Excel and transaction analysis.
-              Concentrated investment on high-impact SKUs to improve both sales and promotion efficiency.
+              Built a TOP SKU-focused promotion strategy for the food category using Pareto analysis and transaction data.
             </p>
-            <div class="project-meta">
-              <div><strong>Problem</strong> Low GMV return from broad promotion spending</div>
-              <div><strong>Analysis</strong> Pareto-based SKU structure analysis</div>
-              <div><strong>Result</strong> Achieved No.1 category performance and GMV/CM targets</div>
+            <div class="project-footer">
+              <span class="view-more">View Details <i data-lucide="arrow-right"></i></span>
             </div>
           </article>
         </div>
@@ -410,6 +398,18 @@
       </div>
     </div>
   </footer>
+
+  <div id="project-modal" class="modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+      <button class="modal-close" aria-label="Close">
+        <i data-lucide="x"></i>
+      </button>
+      <div id="modal-content" class="modal-content">
+        <!-- Content will be injected via JS -->
+      </div>
+    </div>
+  </div>
 
   <!-- JS 연결 -->
   <script src="main.js"></script>
