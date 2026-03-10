@@ -8,10 +8,26 @@
     name="description"
     content="하윤택 - 데이터 기반 커머스 전략 기획 담당자. 결제 퍼널 분석, 카테고리 전략, 성장 프로젝트, 운영 구조 개선 경험."
   />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yuntaek-ha.web.app/" />
+  <meta property="og:title" content="하윤택 | Kurly Commerce Strategy Resume" />
+  <meta property="og:description" content="데이터 기반으로 커머스 성과를 만드는 전략 기획 담당자 하윤택의 포트폴리오입니다." />
+  <meta property="og:image" content="https://yuntaek-ha.web.app/og-image.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="하윤택 | Kurly Commerce Strategy Resume" />
+  <meta property="twitter:description" content="데이터 기반으로 커머스 성과를 만드는 전략 기획 담당자 하윤택의 포트폴리오입니다." />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
   <!-- CSS 연결 -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="noise-overlay"></div>
   <header class="topbar">
     <div class="container topbar-inner">
       <a class="brand" href="#top">
@@ -360,20 +376,34 @@
             <p>데이터 기반 커머스 전략 기획 담당자</p>
           </div>
           <div class="contact-links">
-            <a class="btn primary" href="resume.pdf" download="하윤택_이력서.pdf">PDF 이력서 (Korean)</a>
-            <a class="btn secondary" href="mailto:yuntaek.ha@gmail.com">이메일 연락</a>
+            <a class="btn primary" href="resume.pdf" download="하윤택_이력서.pdf">
+              <i data-lucide="file-text" style="width: 18px; height: 18px;"></i>
+              PDF 이력서 (Korean)
+            </a>
+            <a class="btn secondary" href="mailto:yuntaek.ha@gmail.com">
+              <i data-lucide="mail" style="width: 18px; height: 18px;"></i>
+              이메일 연락
+            </a>
           </div>
         </div>
       </div>
     </section>
   </main>
 
+  <button id="back-to-top" class="back-to-top" aria-label="맨 위로 이동">
+    <i data-lucide="chevron-up"></i>
+  </button>
+
   <footer>
     <div class="container">
       <p>© 2026 Yuntaek Ha. Built for Kurly Commerce Strategy Application.</p>
       <div style="margin-top: 15px; display: flex; justify-content: center; gap: 20px;">
-        <a href="mailto:yuntaek.ha@gmail.com" style="text-decoration: underline; opacity: 0.8;">Email</a>
-        <a href="https://www.linkedin.com/in/yuntaek-h-510828171/" target="_blank" style="text-decoration: underline; opacity: 0.8;">LinkedIn</a>
+        <a href="mailto:yuntaek.ha@gmail.com" style="display: flex; align-items: center; gap: 6px; opacity: 0.8;">
+          <i data-lucide="mail" style="width: 14px; height: 14px;"></i> Email
+        </a>
+        <a href="https://www.linkedin.com/in/yuntaek-h-510828171/" target="_blank" style="display: flex; align-items: center; gap: 6px; opacity: 0.8;">
+          <i data-lucide="linkedin" style="width: 14px; height: 14px;"></i> LinkedIn
+        </a>
       </div>
     </div>
   </footer>
