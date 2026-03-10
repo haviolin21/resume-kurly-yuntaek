@@ -103,10 +103,48 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
+  /* ===== Common State ===== */
+  const currentLang = document.documentElement.lang === "en" ? "en" : "ko";
+
   /* ===== Initialize Lucide Icons ===== */
   if (window.lucide) {
     window.lucide.createIcons();
   }
+
+  /* ===== Reading Progress Bar ===== */
+  const progressBar = document.getElementById("progress-bar");
+  window.addEventListener("scroll", () => {
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (winScroll / height) * 100;
+    if (progressBar) progressBar.style.width = scrolled + "%";
+  });
+
+  /* ===== Copy Email to Clipboard ===== */
+  const showToast = (message) => {
+    let toast = document.querySelector(".toast");
+    if (!toast) {
+      toast = document.createElement("div");
+      toast.className = "toast";
+      document.body.appendChild(toast);
+    }
+    toast.textContent = message;
+    toast.classList.add("visible");
+    setTimeout(() => {
+      toast.classList.remove("visible");
+    }, 2500);
+  };
+
+  document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const email = link.getAttribute("href").replace("mailto:", "");
+      navigator.clipboard.writeText(email).then(() => {
+        const msg = currentLang === "ko" ? "이메일 주소가 복사되었습니다!" : "Email address copied!";
+        showToast(msg);
+      });
+    });
+  });
 
   /* ===== Scroll Reveal Animation ===== */
   const revealObserver = new IntersectionObserver(
@@ -129,7 +167,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const modalContent = document.getElementById("modal-content");
   const modalClose = modal ? modal.querySelector(".modal-close") : null;
   const modalOverlay = modal ? modal.querySelector(".modal-overlay") : null;
-  const currentLang = document.documentElement.lang === "en" ? "en" : "ko";
 
   const openModal = (projectId) => {
     const data = projectData[currentLang][projectId];
